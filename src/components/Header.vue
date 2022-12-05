@@ -13,10 +13,10 @@ export default defineComponent({
         </div>
         <div class="nav-menu"> 
             <ul>
-                <li><span>00</span> HOME</li>
-                <li><span>01</span> DESTINATION</li>
-                <li><span>02</span> CREW</li>
-                <li><span>03</span> TECHNOLOGY</li>
+                <li className="nav-text"><span>00</span> HOME</li>
+                <li className="nav-text"><span>01</span> DESTINATION</li>
+                <li className="nav-text"><span>02</span> CREW</li>
+                <li className="nav-text"><span>03</span> TECHNOLOGY</li>
             </ul>
         </div>
     </header>
@@ -30,7 +30,7 @@ header{
     align-items: center;
 }
 .nav-logo {
-    width: 45%;
+    width: 40%;
     display: flex;
     justify-content: start;
     padding: 0px 0px 0px 3%;
@@ -39,22 +39,23 @@ header{
 }
 .nav-logo::after {
     content: '';
-    width: 70%;
-    height: 0.0356rem;
+    width: 80%;
+    height: 0.05rem;
     background: white;
 
     position: absolute;
-    right: -20px;
+    right: -27px;
     bottom: 20px;
 
     opacity: 0.3;
     z-index: 200;
 }
 .nav-menu {
-    width: 55%;
+    width: 59%;
     padding: 10px 5px;
     display: flex;
     position: relative;
+    right: 0px;
 
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -63,8 +64,9 @@ header{
 
 .nav-menu ul {
     padding: 0px 50px;
-    font-size: 0.9rem;
-    width: 100%;
+    /* font-size: 0.9rem; */
+    
+    width: 82%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -78,6 +80,7 @@ li {
 
 li span {
     font-weight: bolder;
+    margin-right: 5px;
 }
 li:hover::before{
     content: '';
