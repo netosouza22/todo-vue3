@@ -31,7 +31,7 @@ export default defineComponent({
 
     .main-btn:hover {
         animation: pulse 1.8s infinite;
-        transition: 1s ease;
+        transition: 1s ease infinite;
     }   
 
 
