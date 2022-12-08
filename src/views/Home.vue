@@ -7,8 +7,8 @@ export default defineComponent({
   components: {
     Header,
     Main,
-  }
-})
+  },
+});
 </script>
 
 <template>
@@ -18,11 +18,30 @@ export default defineComponent({
   </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .main-page {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/home/background-home-desktop.jpg");
+  overflow-y: auto;
+
+  @include xs {
+    background-image: url('../assets/home/background-home-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include md {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+    /* background-repeat: no-repeat, repeat; */
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  @include lg {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+  }
 
   display: flex;
   flex-direction: column;
