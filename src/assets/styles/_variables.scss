@@ -1,23 +1,33 @@
-$dark: #0B0D17;
-$text-color: #D0D6F9;
-$light: #FFFFFF;
+//Colors
+$dark: #0b0d17;
+$text-color: #d0d6f9;
+$light: #ffffff;
 
-$heading1: 9.375rem;
-$heading2: 6.25rem;
-$heading3: 3.5rem;
-$heading4: 2rem;
-$heading5: 1.75rem;
-
-$heading1-mobile: 5rem;
+//Typography
 
 // $heading1: 150px;
 // $heading2: 100px;
 // $heading3: 56px;
 // $heading4: 32px;
 
-$subheading1:  28px;
-$subheading2:  14px;
+//Desktop
+$heading1: 9.375rem;
+$heading2: 6.25rem;
+$heading3: 3.5rem;
+$heading4: 2rem;
+$heading5: 1.75rem;
 
+$subheading1: 28px;
+$subheading2: 14px;
 $nav-text: 1rem;
-// $nav-text: 16px;
 $body-text: 1.125rem;
+
+//Tablet
+$heading1-tablet: 9.375rem;
+$heading5-tablet: 1.25rem;
+$body-text-tablet: 1rem;
+
+//Mobile
+$heading1-mobile: 5rem;
+$heading5-mobile: 1rem;
+$body-text-mobile: 0.938rem;
