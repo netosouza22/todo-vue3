@@ -1,37 +1,102 @@
-$breakpoints: (
-  small : 480px,
-  medium: 700px, // Previously 640px
-  large : 1024px
-);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import '_breakpoints.scss';
 
-$p-font-sizes: (
-  null  : 15px,
-  small : 16px,
-  medium: 17px,
-  large : 19px
-);
+.heading1 {
+  // font-size: $heading1;
+  font-family: 'Bellefair', serif;
+  line-height: 172px;
+  color: $light;
 
-$h1-font-sizes: (
-  null  : 28px,
-  small : 31px,
-  medium: 33px,
-  large : 36px
-);
-
-@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
-    @each $fs-breakpoint, $fs-font-size in $fs-map {
-      @if $fs-breakpoint == null {
-        font-size: $fs-font-size;
-      }
-      @else {
-        // If $fs-font-size is a key that exists in
-        // $fs-breakpoints, use the value
-        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-        }
-        @media screen and (min-width: $fs-breakpoint) {
-          font-size: $fs-font-size;
-        }
-      }
-    }
+  @include xs {
+    font-size: $heading1-mobile;
   }
+  @include md {
+    font-size: $heading1-tablet;
+  }
+  @include lg {
+    font-size: $heading1;
+  }
+}
+.heading3 {
+  font-size: $heading3;
+}
+.heading5 {
+  line-height: 34px;
+  letter-spacing: 0.2rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: $text-color;
+  @include xs {
+    font-size: $heading5-mobile;
+  }
+  @include md {
+    font-size: $heading5-tablet;
+  }
+  @include lg {
+    font-size: $heading5;
+  }
+}
+
+.nav-text {
+  font-size: $nav-text;
+  line-height: 19px;
+  letter-spacing: 0.169rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: $light;
+}
+
+.body-text {
+  line-height: 32px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: $text-color;
+
+  @include xs {
+    font-size: $body-text-mobile;
+  }
+  @include md {
+    font-size: $body-text-tablet;
+  }
+  @include lg {
+    font-size: $body-text;
+  }
+}
+
+// @media screen and (max-width: $tablet) {
+//   .heading1 {
+//     font-size: $heading1-tablet;
+//   }
+//   //   .heading3 {
+//   //     font-size: $heading3-tablet;
+//   //   }
+//   .heading5 {
+//     font-size: $heading5-tablet;
+//   }
+
+//   //   .nav-text {
+//   //     font-size: $nav-text;
+//   //   }
+
+//   .body-text {
+//     font-size: $body-text-tablet;
+//   }
+// }
+
+// @media screen and (max-width: $mobile) {
+//   .heading1 {
+//     font-size: $heading1-mobile;
+//   }
+//   //   .heading3 {
+//   //     font-size: $heading3-mobile;
+//   //   }
+//   .heading5 {
+//     font-size: $heading5-mobile;
+//   }
+
+//   //   .nav-text {
+//   //     font-size: $nav-text;
+//   //   }
+
+//   .body-text {
+//     font-size: $body-text-mobile;
+//   }
+// }
