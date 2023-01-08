@@ -1,64 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap');
 @import '_breakpoints.scss';
 
 .heading1 {
-  // font-size: $heading1;
-  font-family: 'Bellefair', serif;
-  line-height: 172px;
-  color: $light;
+    // font-size: $heading1;
+    font-family: 'Bellefair', serif;
+    line-height: 172px;
+    color: $light;
 
-  @include xs {
-    font-size: $heading1-mobile;
-  }
-  @include md {
-    font-size: $heading1-tablet;
-  }
-  @include lg {
-    font-size: $heading1;
-  }
+    @include xs {
+        font-size: $heading1-mobile;
+    }
+    @include md {
+        font-size: $heading1-tablet;
+    }
+    @include lg {
+        font-size: $heading1;
+    }
+}
+.heading2 {
+    font-family: 'Bellefair', serif;
+    color: $light;
+
+    @include xs {
+        font-size: $heading2-mobile;
+    }
+    @include md {
+        font-size: $heading2-tablet;
+    }
+    @include lg {
+        font-size: $heading2;
+    }
 }
 .heading3 {
-  font-size: $heading3;
+    font-family: 'Bellefair', sans-serif;
+    color: $light;
+    @include xs {
+        font-size: $heading3-mobile;
+    }
+    @include md {
+        font-size: $heading3-tablet;
+    }
+    @include lg {
+        font-size: $heading3;
+    }
+}
+.heading4 {
+    font-family: 'Bellefair', sans-serif;
+    color: $text-color;
+    @include xs {
+        font-size: $heading4-mobile;
+    }
+    @include md {
+        font-size: $heading4-tablet;
+    }
+    @include lg {
+        font-size: $heading4;
+    }
 }
 .heading5 {
-  line-height: 34px;
-  letter-spacing: 0.2rem;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  color: $text-color;
-  @include xs {
-    font-size: $heading5-mobile;
-  }
-  @include md {
-    font-size: $heading5-tablet;
-  }
-  @include lg {
-    font-size: $heading5;
-  }
+    line-height: 34px;
+    letter-spacing: 0.2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $text-color;
+    @include xs {
+        font-size: $heading5-mobile;
+    }
+    @include md {
+        font-size: $heading5-tablet;
+    }
+    @include lg {
+        font-size: $heading5;
+    }
+}
+.sub-heading1 {
+    line-height: 34px;
+    letter-spacing: 0.2rem;
+    font-family: 'Bellefair', sans-serif;
+    color: $text-color;
+    @include xs {
+        font-size: $subheading1-mobile;
+    }
+    @include md {
+        font-size: $subheading1-tablet;
+    }
+    @include lg {
+        font-size: $subheading1;
+    }
+}
+.sub-heading2 {
+    line-height: 32px;
+    letter-spacing: 0.148rem;
+    font-family: 'Bellefair', sans-serif;
+    color: $text-color;
+    @include xs {
+        font-size: $subheading2-mobile;
+    }
+    @include md {
+        font-size: $subheading2-tablet;
+    }
+    @include lg {
+        font-size: $subheading2;
+    }
 }
 
-.nav-text {
-  font-size: $nav-text;
-  line-height: 19px;
-  letter-spacing: 0.169rem;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  color: $light;
+.nav__text {
+    font-size: $nav-text;
+    line-height: 19px;
+    letter-spacing: 0.169rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $light;
 }
 
 .body-text {
-  line-height: 32px;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  color: $text-color;
+    line-height: 32px;
+    font-family: 'Barlow', sans-serif;
+    color: $text-color;
 
-  @include xs {
-    font-size: $body-text-mobile;
-  }
-  @include md {
-    font-size: $body-text-tablet;
-  }
-  @include lg {
-    font-size: $body-text;
-  }
+    @include xs {
+        font-size: $body-text-mobile;
+    }
+    @include md {
+        font-size: $body-text-tablet;
+    }
+    @include lg {
+        font-size: $body-text;
+    }
 }
 
 // @media screen and (max-width: $tablet) {
