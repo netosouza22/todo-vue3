@@ -49,6 +49,28 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .destination-page {
+    @include xs {
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include md {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+        /* background-repeat: no-repeat, repeat; */
+        /* background-size: cover; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    @include lg {
+        background-image: url('../assets/destination/background-destination-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
     width: 100%;
     height: 100vh;
     overflow-y: auto;
