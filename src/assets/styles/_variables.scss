@@ -3,13 +3,6 @@ $dark: #0b0d17;
 $text-color: #d0d6f9;
 $light: #ffffff;
 
-//Typography
-
-// $heading1: 150px;
-// $heading2: 100px;
-// $heading3: 56px;
-// $heading4: 32px;
-
 //Desktop
 $heading1: 9.375rem;
 $heading2: 6.25rem;
@@ -17,17 +10,29 @@ $heading3: 3.5rem;
 $heading4: 2rem;
 $heading5: 1.75rem;
 
-$subheading1: 28px;
-$subheading2: 14px;
+$subheading1: 1.75rem;
+$subheading2: 0.875rem;
 $nav-text: 1rem;
 $body-text: 1.125rem;
 
 //Tablet
 $heading1-tablet: 9.375rem;
+$heading2-tablet: 5rem;
+$heading3-tablet: 2.5rem;
+$heading4-tablet: 1.5rem;
 $heading5-tablet: 1.25rem;
+
+$subheading1-tablet: 1.75rem;
+$subheading2-tablet: 0.875rem;
 $body-text-tablet: 1rem;
 
 //Mobile
 $heading1-mobile: 5rem;
+$heading2-mobile: 3.5rem;
+$heading3-mobile: 1.5rem;
+$heading4-mobile: 1rem;
 $heading5-mobile: 1rem;
+
+$subheading1-mobile: 1.75rem;
+$subheading2-mobile: 0.875rem;
 $body-text-mobile: 0.938rem;
