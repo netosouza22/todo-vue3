@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ButtonVue from '/@/components/UI/Button.vue';
+import ButtonVue from '/@/components/base/Button.vue';
 
 export default defineComponent({
   name: 'Main',
@@ -12,18 +12,18 @@ export default defineComponent({
 
 <template>
   <main>
-    <section class="main-text-group">
-      <span class="heading5" role="h5"> SO, YOU WANT TO TRAVEL TO </span>
-      <span class="heading1" role="h1"> SPACE </span>
-      <span class="main-description body-text" role="p">
+    <section class="main__introduction-text">
+      <h5 class="heading5">SO, YOU WANT TO TRAVEL TO</h5>
+      <h1 class="heading1">SPACE</h1>
+      <p class="body-text">
         Let’s face it; if you want to go to space, you might as well<br />
         genuinely go to outer space and not hover kind of on the edge of it.
         Well sit back, and relax because we’ll give you a truly out of this
         world experience!
-      </span>
+      </p>
     </section>
 
-    <section class="main-btn-section">
+    <section className="main__btn">
       <v-button></v-button>
     </section>
   </main>
@@ -33,11 +33,12 @@ export default defineComponent({
 main {
   max-width: 100%;
   display: flex;
+  align-items: center;
   padding: 5% 10%;
 
   color: white;
 
-  .main-text-group {
+  .main__introduction-text {
     display: flex;
     flex-direction: column;
 
@@ -65,12 +66,19 @@ main {
     }
   }
 
-  .main-description {
+  .body-text {
     @include xs {
       display: none;
     }
     @include md {
       display: block;
+    }
+  }
+
+  .main__btn {
+    margin-top: 12rem;
+    @include md {
+      margin-top: 0;
     }
   }
 
